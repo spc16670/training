@@ -12,13 +12,15 @@ category:
 
 <div class="posts">
   {% for p in site.pages %}
+	
+	{{ p.category }}
+
 	{% if p.categories contains 'training' %}
 
-		{{ p.category }}
 
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ p.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></h1>
 
       <div class="entry">
         {{ p.excerpt }}
