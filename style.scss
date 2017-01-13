@@ -150,6 +150,11 @@ img {
 // .masthead
 //
 
+.site-heading {
+	font-family: "Righteous"
+	font-size: 200%
+}
+
 .wrapper-masthead {
   margin-bottom: 50px;
 }
@@ -241,6 +246,8 @@ nav {
 // .main
 //
 
+
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -250,6 +257,8 @@ nav {
   padding-bottom: 1em;
   border-bottom: none;
 }
+
+
 
 .post {
   blockquote {
