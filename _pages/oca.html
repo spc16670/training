@@ -1,7 +1,7 @@
 ---
-layout: default
-title: Oracle Certified Associate
-category: training
+layout: "default"
+title: "Oracle Certified Associate"
+category: "training"
 permalink: "/oca/"
 ---
 
@@ -11,7 +11,7 @@ We got a right to pick a little fight, Bonanza! If anyone fights anyone of us, h
 
 <div class="posts">
   {% for page in site.pages %}
-	{% unless page.categories contains 'oca' %}	
+	{% if page.categories contains 'oca' %}	
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
@@ -22,6 +22,6 @@ We got a right to pick a little fight, Bonanza! If anyone fights anyone of us, h
 
       <a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
     </article>
-	{% endunless %}
+	{% endif %}
   {% endfor %}
 </div>
