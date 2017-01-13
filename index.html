@@ -11,11 +11,10 @@ category:
 
 
 <div class="posts">
-  {% for p in site.pages %}
+  {% for p in site.training %}
 	
 	{{ p.category }}
 
-	{% if p.categories contains 'training' %}
 
 
     <article class="post">
@@ -28,7 +27,6 @@ category:
 
       <a href="{{ site.baseurl }}{{ p.url }}" class="read-more">Read More</a>
     </article>
-	{% endif %}
 
 	<hr/>
   {% endfor %}
