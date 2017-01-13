@@ -11,7 +11,7 @@ category:
 
 
 <div class="posts">
-  {% for p in site.collections %}
+  {% for p in site.pages %}
 	
 	{{ p.category }}
 
@@ -29,5 +29,7 @@ category:
       <a href="{{ site.baseurl }}{{ p.url }}" class="read-more">Read More</a>
     </article>
 	{% endif %}
+
+	<hr/>
   {% endfor %}
 </div>
