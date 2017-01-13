@@ -8,6 +8,7 @@ layout: default
 
 <div class="posts">
   {% for page in site.pages %}
+	{% unless page.categories contains 'training' %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
@@ -18,5 +19,6 @@ layout: default
 
       <a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
     </article>
+	{% endunless %}
   {% endfor %}
 </div>
