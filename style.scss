@@ -151,38 +151,39 @@ img {
 //
 
 .site-heading {
-	font-family: "Righteous";
+	font-family: $righteous;
 	font-size: 300%;
+	color: green;
 }
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+	padding: 20px 0;
+	border-bottom: 1px solid $lightGray;
 
-  @include mobile {
-    text-align: center;
-  }
+	@include mobile {
+		text-align: center;
+	}
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-right: 15px;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+	@include mobile {
+		float: none;
+		display: block;
+		margin: 0 auto;
+ 	}
 
-  img {
-    border-radius: 5px;
-  }
+	img {
+		border-radius: 5px;
+	}
 }
 
 .site-info {
@@ -281,15 +282,15 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+	margin-top: 50px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: $lightGray;
 }
 
 footer {
-  padding: 20px 0;
-  text-align: center;
+	padding: 20px 0;
+	text-align: center;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
