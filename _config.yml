@@ -49,11 +49,14 @@ url: http://ionas.co.uk
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: "/training"
 
+
+include: ['_pages']
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: /:title/
+permalink: /:categories/:title/
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
