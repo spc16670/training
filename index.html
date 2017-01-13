@@ -6,21 +6,25 @@ layout: default
 	Welcome to training
 </p>
 
-<div class="posts">
-  {% for page in site.pages %}
-	{% if page.categories contains 'training' %}
+category: 
+	{{ page.category }}
 
-		{{ page.category }}
+
+<div class="posts">
+  {% for p in site.pages %}
+	{% if p.categories contains 'training' %}
+
+		{{ p.category }}
 
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ p.title }}</a></h1>
 
       <div class="entry">
-        {{ page.excerpt }}
+        {{ p.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ p.url }}" class="read-more">Read More</a>
     </article>
 	{% endif %}
   {% endfor %}
