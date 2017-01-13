@@ -50,7 +50,9 @@ url: http://ionas.co.uk
 baseurl: "/training"
 
 
-include: ['_pages']
+collections:
+    training:
+        output: true
 
 #
 # !! You don't need to change any of the configuration flags below !!
