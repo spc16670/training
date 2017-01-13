@@ -13,8 +13,7 @@ It doesn't matter what comes, fresh goes better in life, with Mentos fresh and f
 We got a right to pick a little fight, Bonanza! If anyone fights anyone of us, he's gotta fight with me! We're not a one to saddle up and run, Bonanza! Anyone of us who starts a little fuss knows he can count on me! One for four, four for one, this we guarantee. We got a right to pick a little fight, Bonanza! If anyone fights anyone of us he's gotta fight with me!
 
 <div class="posts">
-  {% for page in site.pages %}
-	{% if page.categories contains 'oca' %}	
+  {% for page in site.oca %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
@@ -25,6 +24,5 @@ We got a right to pick a little fight, Bonanza! If anyone fights anyone of us, h
 
       <a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Read More</a>
     </article>
-	{% endif %}
   {% endfor %}
 </div>
