@@ -11,8 +11,32 @@
 	color: green;
 }
 
+
+.lang-img {
+	width: 77px;
+	padding: .5em;
+	float: left;
+}
+
+.lang-training {
+	border-radius: 25px;
+	text-align: justify;
+	padding: 1em;
+}
+
+.lang-training:hover {
+	border: 1px solid green;
+}
+
+
 a {
 	color: green;
+}
+
+
+.lang-training a {
+	color: black;
+	text-decoration: none;
 }
 
 .nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
@@ -21,14 +45,14 @@ a {
 	background-color: black;
 }
 
+.nav > li {
+	margin-left: 1em;
+}
 
 .nav > li > a:hover{
 	color: white;
     background-color: green;
 }
-
-
-
 
 
 

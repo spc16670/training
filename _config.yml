@@ -1,6 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
+author: Ionas Software Ltd
 
 # Name of your site (displayed in the header)
 name: Ionas Software Ltd
@@ -16,9 +17,9 @@ avatar: /training/images/a50x52.png
 #
 
 # Includes an icon in the footer for each username you enter
-#footer-links:
+footer-links:
 #  dribbble:
-#  email:
+  email: simon@ionas.co.uk
 #  facebook:
 #  flickr:
 #  github: barryclark/jekyll-now
@@ -39,6 +40,8 @@ avatar: /training/images/a50x52.png
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 # google_analytics:
 
+homepage: http://ionas.co.uk
+
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url: http://ionas.co.uk
@@ -51,13 +54,9 @@ url: http://ionas.co.uk
 baseurl: /training
 
 
-collections:
-    training:
-        output: true
+include: ['_pages']
 
-collections:
-    oca:
-        output: true
+
 
 #
 # !! You don't need to change any of the configuration flags below !!
