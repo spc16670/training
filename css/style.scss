@@ -1,15 +1,35 @@
-
 ---
+# comment
 ---
 
-@import "reset";
 @import "variables";
 
-.site-heading {
+.ionas-header-title {
 	font-family: $righteous;
-	font-size: 300%;
+	padding: .5em .5em;
+	font-size: 2em;
 	color: green;
 }
+
+a {
+	color: green;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+	cursor: default;
+	color: white;
+	background-color: black;
+}
+
+
+.nav > li > a:hover{
+	color: white;
+    background-color: green;
+}
+
+
+
+
 
 
 @import "highlights";

@@ -15,7 +15,6 @@
   	    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     	<![endif]-->
 
-		
 		<link rel="alternate" 
 			type="application/rss+xml" 
 			title="{{ site.name }} - {{ site.description }}" 
@@ -24,36 +23,69 @@
 	</head>
 
 	<body>
-		<div class="wrapper-masthead">
-			<div class="container">
-				<header class="masthead clearfix">
-					<img src="{{ site.avatar }}" /></a>
-					<span class="site-heading"> Training </span>
-					<nav>
-						<a href="{{ site.baseurl }}/">Blog</a>
-						<a href="{{ site.baseurl }}/about">About</a>
-					</nav>
-				</header>
+
+	<div class="container">
+		<div class="header clearfix">
+		<nav>
+			<span style="display: inline-block;">
+				<img align="left" src="{{ site.avatar }}" />
+				<span class="ionas-header-title ">
+					Training
+				</span>
+			</span>
+
+			<div style="padding: .5em;" class="float-right">
+				<ul class="nav nav-pills">
+				<li class="nav-item">
+				<a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+				</li>
+				</ul>
 			</div>
-		</div>
-
-
-
-		
-		    <!-- Begin page content -->
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-		New footer
-        {% include svg-icons.html %}
+		</nav>
       </div>
-    </footer>
-	
-	
+
+      <div class="jumbotron">
+        <h1 class="display-3">Jumbotron heading</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; Company 2017</p>
+		{% include svg-icons.html %}
+      </footer>
+
+    </div> <!-- /container -->
 		{% include analytics.html %}
 	</body>
-
 </html>
