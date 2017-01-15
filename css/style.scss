@@ -19,7 +19,7 @@
 }
 
 .lang-training {
-	border-radius: 25px;
+	border-radius: .7em;
 	text-align: justify;
 	padding: 1em;
 }
@@ -28,6 +28,11 @@
 	border: 1px solid green;
 }
 
+.cert-provider-img {
+	width: 6em;
+	padding: .5em;
+	float: left;
+}
 
 a {
 	color: green;

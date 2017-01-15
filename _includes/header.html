@@ -1,7 +1,7 @@
 <div class="header clearfix">
 	<nav>
 		<span style="display: inline-block;">
-			<a href="{{ site.baseurl }}">
+			<a href="{{ site.baseurl }}/">
 				<img align="left" src="{{ site.avatar }}" />
 			</a>
 			<span class="ionas-header-title ">
@@ -12,9 +12,24 @@
 		<div style="padding: .5em;" class="float-right">
 			<ul class="nav nav-pills">
 				<li class="nav-item">
-					<a class="nav-link active" href="{{ site.baseurl }}">
+					<!-- http://stackoverflow.com/questions/8340170/jekyll-automatically-highlight-current-tab-in-menu-bar -->
+					{% assign pages_list = site.pages %}
+					{% assign group = 'navigation' %}
+					{% for node in pages_list  %}
+					{% if group == null or group == node.group %}
+					{% if page.url == node.url %}
+					<a class="nav-link active" href="{{ site.baseurl }}/">
 						Courses <span class="sr-only">(current)</span>
 					</a>
+					{% else %}
+					<a class="nav-link" href="{{ site.baseurl }}/">
+						Courses <span class="sr-only">(current)</span>
+					</a>
+					{% endif %}
+					{% endif %}
+					{% endfor %}
+					{% assign pages_list = nil %}
+					{% assign group = nil %}
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{{ site.homepage }}">Home</a>
