@@ -32,7 +32,7 @@
 					{% assign group = nil %}
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{{ site.homepage }}">Home</a>
+					<a class="nav-link" href="{{ site.homepage }}?{{site.time | date: '%s%N'}}">Home</a>
 				</li>
 			</ul>
 		</div>
