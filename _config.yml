@@ -56,6 +56,9 @@ baseurl: /training
 
 include: ['_pages']
 
+training-resource-type: [ course, lesson ]
+language-trainings: [ java, erlang, javascript, python ]
+java-courses: [ oca1, oca2 ]
 
 
 #

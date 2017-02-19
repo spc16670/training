@@ -1,6 +1,6 @@
 ---
 layout: default
-category: oca
+categories: [java, oca1, course]
 permalink: /java/oca/oca1/
 ---
 
@@ -21,27 +21,24 @@ permalink: /java/oca/oca1/
 
 <div class="row marketing">
 	<div class="col-sm-12">
+
+	{% for page in site.pages %}
+		{% if page.categories contains 'java' and page.categories contains 'oca1' and page.categories contains 'lesson' %}
+
 		<div class="lang-training">
-			<a href="{{ site.baseurl }}{{ page.permalink }}1/">
-				<h4>Lesson 1</h4>
+			<a href="{{ site.baseurl }}{{ page.permalink }}">
+				<h4>{{ page.title }}</h4>
 				<span>
-					Erlang is a general-purpose, concurrent, functional programming language. 
+					{{ page.description }}
 					<br><br>
 					<div class="btn btn-success">Get Started</div>
 				<span>
 			</a>
-		</div>
-		
-		<div class="lang-training">
-			<a href="{{ site.baseurl }}{{ page.permalink }}2/">
-				<h4>Lesson 2</h4>
-				<span>
-					Erlang is a general-purpose, concurrent, functional programming language. 
-					<br><br>
-					<div class="btn btn-success">Get Started</div>
-				<span>
-			</a>
-		</div>
+		</div>			
+
+		{% endif %}
+	{% endfor %}	
+	
 	</div>
 </div>
 
